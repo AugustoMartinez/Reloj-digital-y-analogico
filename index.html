@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <label for="formatoHora">Elija el formato de hora preferido(por defecto HH:mm:ss)</label>
+        <select name="" id="formatoHora">
+            <option value="HH:mm:ss" selected>HH:mm:ss</option>
+            <option value="hh:mm:ss">hh:mm:ss</option>
+        </select>
+        <label for="formatoFecha">Elija el formato de fecha preferido(por defecto DD del MM de YYYY)</label>
+        <select name="fortF" id="formatoFecha">
+            <option value="DD/MM/YY">DD/MM/YY</option>
+            <option value="DD/MM/YYYY">DD/MM/YYYY</option>
+            <option value="DD MMMM YYYY">DD MMMM YYYY</option>
+            <option value="DD del MM de YYYY" selected>DD del MM de YYYY</option>
+            <option value="DD de MMMM de YYYY">DD de MMMM de YYYY</option>
+            <option value="DDDD DD de MMMM de YYYY">DDDD DD de MMMM de YYYY</option>
+        </select>
+    </form>
+    <div class="reloj">
+        <div class="horas" id="agujaHoras"></div>
+        <div class="minutos" id="agujaMinutos"></div>
+        <div class="segundos" id="agujaSegundos"></div>
+        <div class="linea"></div>
+        <div class="linea2"></div>
+        <div class="linea3"></div>
+        <div class="linea4"></div>
+    </div>
+    <div class="tiempo">
+        <div class="digital">
+            <div class="horaMinuto">
+                <p id="horasMinutosSegundos"></p>
+            </div>
+            <div class="diaMesAnio">
+                <p id="diaMesAnio"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
